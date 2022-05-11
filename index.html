@@ -7,114 +7,221 @@
     body {
       background-color: rgb(41, 63, 111);
       font-family: Arial, Helvetica, sans-serif;
+      margin:0;
+      color:white;
     }
 
-    h5 {
-      color: rgb(255, 0, 0);
-    }
-
-    p {
-      color: rgb(253, 253, 255);
+    h1,h2,h3,h4,h5,h6 {
+      margin: 0;
     }
 
     li {
       color: rgb(0, 0, 0);
     }
 
-    h3 {
-      color: rgb(255, 0, 0);
+    .header {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    h4 {
-      color: rgb(255, 0, 0);
+    .header-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .discord-link {
+      background-color: white;
+      color:black;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-left: 1rem;
+    }
+
+    .disclaimer {
+      padding: 1rem;
+      background-color: #fecaca;
+      border-radius: 6px;
+      color: #dc2626;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .package {
+      background-color: #dbeafe;
+      border-radius: 6px;
+      padding:1rem;
+      color:black;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .packages {
+      display: flex;
+      
+    }
+
+    ul {
+      padding-left: 1.25rem;
     }
   </style>
   <title>Nieuwewijk Roleplay</title>
+  <link rel="icon" href="favicon.ico">
 </head>
 
 
 <body>
-  <h1>Donatie site Nieuwewijk Roleplay</h1>
-  <h5>Hier staan de lijstje</h5>
-  <h3><u>DISCLAIMER:Doneren is altijd geheel vrijblijvend,<br>>
-      Doneer alleen als je 18+ bent of toestemming hebt van je ouders/verzorgers.</u></h3>
-  <h4><u>Starterspakketten</u>:</h4>
-  <p>Starterspakket 1: €7,50<br>>
-  <ol>
-    <li>Mini Cooper</li>
-    <li>€5.000 extra startersgeld</li>
-    <li>Queskip 1 maand</li>
-    <li>Donateur rol in de Discord</li>
-    <li>Toegang tot de donateurs kanalen</li>
-  </ol>
-  <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
-  <p>Starterspakket 2: €10,00<br>>
-  <ol>
-    <li>Lexus GS 350</li>
-    <li>€7.500 extra startersgeld</li>
-    <li>Queskip 1 maand</li>
-    <li>Donateur rol in de Discord</li>
-    <li>Toegang tot de donateurs kanalen</li>
-  </ol>
-  <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
-  <p>Starterspakket COMBO: €15,00<br>
-  <ol>
-    <li>Mini cooper</li>
-    <li>Lexus GS 350</li>
-    <li>€15,000</li>
-    <li>Queskip 1 maand</li>
-    <li>Donateur rol in de Discord</li>
-    <li>Toegang tot de donateurs kanalen</li>
+  <main>
+    <header class="header">
+      <div class="header-title">
+        <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="50" height="60" style="margin-right:1rem"><h1>Nieuwewijk Roleplay Donaties</h1>
+      </div>
+
+      <div class="header-links">
+        <a class="discord-link" href="handboek.html">Handboek</a>
+        <a class="discord-link" href="https://discord.gg/Dd58w427g8" target="_blank">Discord</a>
+      </div>
+    </header>
+
+    <div class="disclaimer">
+      DISCLAIMER:Doneren is altijd geheel vrijblijvend,<br>
+      Doneer alleen als je 18+ bent of toestemming hebt van je ouders/verzorgers.
+    </div>
+
+    <!-- BEGIN STARTERSPAKKETTEN -->
+    <h2>Starterspakketten</h2>
+    <div class="packages">
+      <div class="package">
+        <h3>Starterspakket 1</h3>
+        <ul>
+          <li>Mini Cooper</li>
+          <li>€5.000 extra startersgeld</li>
+          <li>Queskip 1 maand</li>
+          <li>Donateur rol in de Discord</li>
+          <li>Toegang tot de donateurs kanalen</li>
+        </ul>
+        <span>€7,50</span>
+          
+          <!-- <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300"> -->
+      </div>
+
+      <div class="package">
+        <h3>Starterspakket 2</h3>
+        <ul>
+          <li>Lexus GS 350</li>
+          <li>€7.500 extra startersgeld</li>
+          <li>Queskip 1 maand</li>
+          <li>Donateur rol in de Discord</li>
+          <li>Toegang tot de donateurs kanalen</li>
+        </ul>
+        <span>€10,00</span>
+          
+          <!-- <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300"> -->
+      </div>
+
+      <div class="package">
+        <h3>Starterspakket COMBO:</h3>
+        <ul>
+          <li>Mini cooper</li>
+          <li>Lexus GS 350</li>
+          <li>€15.000</li>
+          <li>Queskip 1 maand</li>
+          <li>Donateur rol in de Discord</li>
+          <li>Toegang tot de donateurs kanalen</li>
+        </ul>
+        <span>€10,00</span>
+          
+          <!-- <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300"> -->
+      </div>
+    </div>
+    <!-- EINDE STARTERSPAKKETTEN -->
+
+    
+    
+    <p>Starterspakket 2: €10,00<br>
+    <ol>
+      <li>Lexus GS 350</li>
+      <li>€7.500 extra startersgeld</li>
+      <li>Queskip 1 maand</li>
+      <li>Donateur rol in de Discord</li>
+      <li>Toegang tot de donateurs kanalen</li>
+    </ol>
     <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
-  </ol>
-  <h4><u>Donatiepakketten</u>:</h4>
-  <p>Bronze Donateur: €10,00<br>>
-  <ol>
-    <li>Subaru Impreza</li>
-    <li>Toegang tot de donateurs kanalen</li>
-    <li>Custom telefoonnummer (9 tekens)</li>
-    <li>Queskip 1 maand</li>
-    <li>Speciale Bronze donateur rol in de Discord!</li>
-    <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
-  </ol>
-  <p><em>Silver donateur: €15,00</em><br>
-  <ol>
-    <li><em>Romeo 8C</em></li>
-    <li><em>Toegang tot de donateurs kanalen</em></li>
-    <li><em>Custom telefoonnummer (9 tekens)</em></li>
-    <li><em>Queskip 1 maand</em></li>
-    <li><em>Speciale silver donateur rol in de Discord!</em></li>
-    <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
-  </ol>
-  <p><em>Gold donateur: €25,00</em><br>
-  <ol>
-    <li><em>Honda civic Type R</em></li>
-    <li><em>Jeep SRT-8</em></li>
-    <li><em>Custom telefoonnummer (9 tekens)</em></li>
-    <li><em>Queskip 1 maand</em></li>
-    <li><em>Speciale Gold donateur rol in de Discord!</em></li>
-    <li><em>Toegang tot de donateurs kanalen</em></li>
-    <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
-  </ol>
-  <p><em>Diamond donateur: €50,00</em><br>
-  <ol>
-    <li><em>Audi S8</em></li>
-    <li><em>BMW X7</em></li>
-    <li><em>Custom telefoonnummer (9 tekens)</em></li>
-    <li><em>Queskip 1 maand</em></li>
-    <li><em>Speciale Gold donateur rol in de Discord!</em></li>
-    <li><em>Custom telefoonnummer (9 tekens)
-    <li><em>Toegang tot de donateurs kanalen</em></li>
-    <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
-  </ol>
-  <h4><u>Limited pakketten:</u></h4>
-  <p><em>Porsche super pakket: €30,00 (Maximaal 5x in totaal!)</em><br>
-  <ol>
-    <li><em>Porsche GT3RS</em></li>
-    <li><em>Toegang tot de donateurs kanalen</em></li>
-    <li><em>Donateur rol in de discord</em></li>
-    <img src="porsche.jpeg" alt="NieuwewijkRP" width="600" height="300">
-  </ol>
+    <p>Starterspakket COMBO: €15,00<br>
+    <ol>
+      <li>Mini cooper</li>
+      <li>Lexus GS 350</li>
+      <li>€15,000</li>
+      <li>Queskip 1 maand</li>
+      <li>Donateur rol in de Discord</li>
+      <li>Toegang tot de donateurs kanalen</li>
+      <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
+    </ol>
+    <h2>Donatiepakketten</h2>
+    <p>Bronze Donateur: €10,00<br>
+    <ol>
+      <li>Subaru Impreza</li>
+      <li>Toegang tot de donateurs kanalen</li>
+      <li>Custom telefoonnummer (9 tekens)</li>
+      <li>Queskip 1 maand</li>
+      <li>Speciale Bronze donateur rol in de Discord!</li>
+      <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
+    </ol>
+    <p><em>Silver donateur: €15,00</em><br>
+    <ol>
+      <li><em>Romeo 8C</em></li>
+      <li><em>Toegang tot de donateurs kanalen</em></li>
+      <li><em>Custom telefoonnummer (9 tekens)</em></li>
+      <li><em>Queskip 1 maand</em></li>
+      <li><em>Speciale silver donateur rol in de Discord!</em></li>
+      <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
+    </ol>
+    <p><em>Gold donateur: €25,00</em><br>
+    <ol>
+      <li><em>Honda civic Type R</em></li>
+      <li><em>Jeep SRT-8</em></li>
+      <li><em>Custom telefoonnummer (9 tekens)</em></li>
+      <li><em>Queskip 1 maand</em></li>
+      <li><em>Speciale Gold donateur rol in de Discord!</em></li>
+      <li><em>Toegang tot de donateurs kanalen</em></li>
+      <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
+    </ol>
+    <p><em>Diamond donateur: €50,00</em><br>
+    <ol>
+      <li><em>Audi S8</em></li>
+      <li><em>BMW X7</em></li>
+      <li><em>Custom telefoonnummer (9 tekens)</em></li>
+      <li><em>Queskip 1 maand</em></li>
+      <li><em>Speciale Gold donateur rol in de Discord!</em></li>
+      <li><em>Custom telefoonnummer (9 tekens)
+      <li><em>Toegang tot de donateurs kanalen</em></li>
+      <img src="Nieuwewijk.png" alt="NieuwewijkRP" width="250" height="300">
+    </ol>
+    <h2>Limited pakketten:</u></h4>
+    <p><em>Porsche super pakket: €30,00 (Maximaal 5x in totaal!)</em><br>
+    <ol>
+      <li><em>Porsche GT3RS</em></li>
+      <li><em>Toegang tot de donateurs kanalen</em></li>
+      <li><em>Donateur rol in de discord</em></li>
+      <img src="porsche.jpeg" alt="NieuwewijkRP" width="600" height="300">
+    </ol>
+  </main>
 
 </body>
 
